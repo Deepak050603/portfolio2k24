@@ -1,0 +1,238 @@
+*{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+#container{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+
+}
+#navbar{
+    display: flex;
+    width: 85%;
+    margin-left: 100px;
+    justify-content: space-between; /* horizotally and for child */
+    align-items: center; /* vertically center */
+}
+#logo{
+    width: 130px;
+}
+.listitem{
+    list-style-type: none;
+    display: inline;
+    margin: 10px 22px;
+    font-weight: 700;
+
+}
+
+.listitem a:hover{
+    color: red;
+    cursor: pointer;
+}
+li a{
+    text-decoration: none; /* remove underline */
+    color: black;
+}
+
+
+
+#title{
+    margin-top: 13%;
+    margin-left: 8%;
+   
+}
+#title h1{
+    font-size: 50px;
+   
+}
+#title a{
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    margin-left: 5%;
+}
+
+#image{
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    right: 30px;
+    bottom: 0px;
+
+}
+.imagegroup{
+    position: absolute;
+    height: 100%;
+    bottom: 0px;
+    left: 50%;
+    transform: translatex(-50%);
+    transition: bottom 1s,left 2s;
+}
+#image:hover #shape{
+    bottom: 50px;
+} 
+#image:hover #girl{
+    left: 40%;
+}
+#about{
+    margin: 14% 8% 0 8%;
+}
+.heading{
+    text-align: center;
+    
+}
+.heading h2{
+    font-size: 30px;
+}
+.heading p{
+    font-size: 20px;
+    color: green;
+}
+#content{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem; /*rem :- related to html element font size. by defualt value-16px */
+    margin-top: 2rem;
+
+}
+#content img{
+    width: 80%;
+}
+#content_details{
+    text-align: justify;
+    font-size: 20px;
+    font-weight: 500;
+}
+#infomations{
+   margin-top: 2rem;
+}
+.info{
+    margin-top: 1rem;
+}
+.info span{
+    margin-left: 1rem;
+}
+#skill{
+    margin: 8% 8% 0 8%;
+}
+#skill_container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+}
+#skill_img img{
+    width: 90%;
+}
+.bar-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0;
+    align-items: center;
+    position: relative;
+
+    
+}
+.bar-container span{
+ font-weight: 800;
+ font-size: 20px;
+}
+.bar{
+    width: 100%;
+    height: 0.5rem;
+    background-color: black;
+    border-radius: 10px;
+    position: absolute;
+   bottom: 0px;
+}
+#html_bar{
+    width: 95%;
+    background-color: orange
+}
+#css_bar{
+    width: 88%;
+    background-color: orange
+}
+
+
+#js_bar{
+    width: 89%;
+    background-color: orange
+}
+
+#react_bar{
+    width: 85%;
+    background-color: orange
+}
+#contact{
+    margin-top: 5px;
+}
+#icon-set{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3%;
+    margin-bottom: 20px;
+    
+
+}
+.icon,.up{
+    height: 50px;
+    width: 50px;
+    margin: 0px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+   
+}
+.icon i{
+    color: black;
+}
+.icon:hover{
+    background-image: linear-gradient( to bottom right,yellow,rgb(255, 136, 0));
+ 
+}
+.icon:hover i{
+    color: white;
+    animation: shake 0.75s;
+
+}
+@keyframes shake{
+    10%{
+        transform: rotate(-15deg);
+    }
+    20%{
+        transform: rotate(15deg);
+    }
+    30%{
+        transform: rotate(-15deg);
+    }
+    40%{
+        transform: rotate(15deg);
+    }
+}
+footer{
+    margin: 2.5rem 0px;
+}
+footer p{
+    font-size: 17px;
+    font-weight: 600;
+    text-align: center;
+}
+.up{
+    background-image: linear-gradient( to bottom right,yellow,rgb(255, 136, 0));
+    float: right;
+    margin: 13px 50px 70px 0;
+}
+.up:hover i{
+    color: white;
+}
+html{
+    scroll-behavior:smooth;
+    
+}
